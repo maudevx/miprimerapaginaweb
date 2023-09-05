@@ -1,0 +1,183 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: lightsteelblue;
+}
+
+.nav{
+  background-color: darkblue;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.boton{
+  display: none;
+}
+
+.nav_list{
+  display: flex;
+}
+
+.nav_links{
+  display: flex;
+  list-style-type: none;
+  width: 20%;
+  height: 50px;
+  border-right: 2px solid rgb(6, 6, 82);
+}
+
+.nav_links:last-child{
+  border-right: none;
+}
+
+.nav_link{
+  width: 100%;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav_link:hover,
+.nav_link-active{
+  background-color: black;
+  cursor: pointer;
+}
+
+
+.main{
+  width: 80%;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.main_title{
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 10px;
+}
+
+.main_subtitle{
+  text-align: center;
+  margin: 20px;
+  font-size: 40px;
+}
+
+.main_subtitle2{
+  font-size: 20px;
+  margin: 30px 0 0;
+}
+
+.main_p{
+  margin: 15px 0;
+}
+
+.main_list{
+  margin: 15px;
+}
+
+.main_gallery{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px auto;
+  gap: 10px;
+}
+
+.main_img{
+  display: block;
+  width: 280px;
+}
+
+.main_form p{
+  margin: 15px 0;
+}
+
+input[type="submit"]{
+  background-color: darkblue;
+  border: none;
+  width: 100px;
+  height: 40px;
+  color: white;
+  cursor: pointer;
+
+}
+
+input[type="submit"]:hover{
+  background-color: black;
+}
+
+.video_container{
+  text-align: center;
+  margin: 20px auto;
+}
+
+.video{
+  display: block;
+  margin: 40px auto;
+}
+
+.footer{
+  height: 100px;
+  background-color: darkblue;
+  text-align: center;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.footer p{
+  line-height: 100px;
+}
+
+@media (max-width: 600px){
+  /* .nav{
+    display: none;
+  } */
+
+  .nav_list{
+    flex-direction: column;
+  }
+
+  .nav_links{
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid rgb(6, 6, 82);
+  }
+
+  .boton{
+    display: block;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: darkblue;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  .main{
+    width: 100%;
+    margin-top: 20px;   
+  }
+
+  .nav-visible{
+    display: none;
+  }
+
+  .video_container{
+    width: 80%;
+  }
+  
+  .video{
+    display: block;
+    width: 100%;
+    margin: 40px auto;
+  }
+}

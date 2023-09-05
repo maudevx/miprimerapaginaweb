@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Barra de navegación - inicio</title>
+</head>
+
+<body>
+  <header>
+    <button type="button" class="boton" id="boton">&#9776;</button>
+
+    <nav class="nav nav-visible" id="nav">
+      <ul class="nav_list">
+        <li class="nav_links">
+          <a href="index.html" class="nav_link">Inicio</a>
+        </li>
+        <li class="nav_links">
+          <a href="productos.html" class="nav_link">Productos</a>
+        </li>
+        <li class="nav_links">
+          <a href="servicios.html" class="nav_link">Servicios</a>
+        </li>
+        <li class="nav_links">
+          <a href="acercade.html" class="nav_link">Acerca de</a>
+        </li>
+        <li class="nav_links">
+          <a href="contactos.html" class="nav_link nav_link-active">Contactos</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h2 class="main_title">Contactos</h2>
+    <form action="#" class="main_form" id="formulario">
+			<p>
+				<label for="">Nombre:</label>
+				<input type="text" name="" id="nombre" class="nombre" placeholder="Ingrese su nombre">
+				<span id="nombre_error"></span>
+			</p>
+			
+			<p>
+				<label for="">Email:</label>
+				<input type="email" name="" id="email"  class="email" placeholder="Ingrese su email">
+				<span id="email_error"></span>
+			</p>
+      
+      <p>
+        <label for="">Mensaje: </label>
+        <textarea name="" id="mensaje" class="mensaje" cols="30" rows="10" placeholder="Ingrese su mensaje..."></textarea>
+      </p>
+
+			<p>
+        <input type="submit" value="Enviar" >
+			</p>
+      
+    </form>
+
+
+  </main>
+
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
